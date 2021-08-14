@@ -5,6 +5,139 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interview</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <!-- <img src="./assets/logo.png" alt="" class="logoNorteño" /> -->
+      <div class="container">
+        <div>
+          <img src="./assets/BUD LIGHT.png" alt="" class="budLight" />
+        </div>
+        <nav>
+          <ol>
+            <li><a href="#">Home</a></li>
+            <li>
+              <select>
+                <option value="">INICIATIVAS</option>
+                <option value="">INICIATIVAS</option>
+                <option value="">INICIATIVAS</option>
+                <option value="">INICIATIVAS</option>
+                <option value="">INICIATIVAS</option>
+              </select>
+            </li>
+          </ol>
+        </nav>
+        <div class="IconContainer">
+          <a href=""><img src="./assets/instagram.png" alt="" /></a>
+          <a href=""><img src="./assets/twitter.png" alt="" /></a>
+          <a href=""><img src="./assets/facebook.png" alt="" /></a>
+          <a href=""><img src="./assets/youtube.png" alt="" /></a>
+        </div>
+        <div class="topnav">
+          <button type="button" id="BurgerMenuButton" onclick="openMenu()">
+            <img src="./assets/burgerMenu.png" alt="" />
+          </button>
+          <div id="myLinks" class="none">
+            <a href="#news">HOME</a>
+            <a href="#contact">INICIATIVAS</a>
+            <a href="#about">About</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="">
+      <h1>GANA PREMIOS PARTICIPANDO EN LA TRIVIA DE NORTEÑO SUMMER GAMES</h1>
+      <h2>
+        Regístrate y si aciertas en la trivia podrás ganar skins y cofres de
+        League of Legends
+      </h2>
+      <form action="">
+        <div class="Container">
+          <div class="Inputgroup">
+            <label for="name">Nombre*</label>
+            <input type="text" id="name" placeholder="Ingresa tu nombre" />
+          </div>
+          <div class="Inputgroup">
+            <label for="lastName">Apellido*</label>
+            <input
+              type="text"
+              id="lastName"
+              placeholder="Ingresa tu apellido"
+            />
+          </div>
+          <div class="Inputgroup">
+            <label for="email">Correo electrónico*</label>
+            <input type="text" id="email" placeholder="Ingresa tu correo" />
+          </div>
+          <div class="Inputgroup">
+            <label for="phone">Teléfono*</label>
+            <input type="text" id="phone" placeholder="000 000 0000" />
+          </div>
+          <div class="Inputgroup">
+            <label for="gender">Género*</label>
+            <select name="cars" id="gender">
+              <option value="">Selecciona tu género</option>
+            </select>
+          </div>
+          <div class="Inputgroup">
+            <label for="DateOfBirth">Fecha de Nacimiento*</label>
+            <div class="dateOfBirth">
+              <input type="text" placeholder="DD" />
+              <select name="cars">
+                <option value="">MM</option>
+              </select>
+              <input type="text" placeholder="AAAA" />
+            </div>
+          </div>
+          <div class="Inputgroup">
+            <label for="stated">Estado*</label>
+            <select name="cars" id="stated">
+              <option value="">Ingresa tu código postal</option>
+            </select>
+          </div>
+          <div class="Inputgroup">
+            <label for="code">Código postal*</label>
+            <input type="text" id="code" placeholder="Código postal" />
+          </div>
+          <div class="Inputgroup">
+            <label for="favoriteBeer">¿Cuál es tu cerveza favorita?*</label>
+            <select name="cars" id="favoriteBeer">
+              <option value="">Selecciona una respuesta</option>
+            </select>
+          </div>
+        </div>
+        <div class="checkGruop">
+          <div class="check">
+            <input type="checkbox" id="Acept" checked />
+            <label for="Acept">
+              Acepto términos, condiciones y políticas de privacidad
+            </label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="get" />
+            <label for="get">
+              Deseo recibir información comercial y eventos de cerveza Bud Light
+            </label>
+          </div>
+        </div>
+        <div class="buttonContainer">
+          <button>REGISTRARME</button>
+        </div>
+      </form>
+    </section>
+    <!--  <footer>
+      <div class="IconContainer">
+        <a href=""><img src="./assets/instagram.png" alt="" /></a>
+        <a href=""><img src="./assets/twitter.png" alt="" /></a>
+        <a href=""><img src="./assets/facebook.png" alt="" /></a>
+        <a href=""><img src="./assets/youtube.png" alt="" /></a>
+      </div>
+    </footer> -->
+  </body>
 </html>
+<script src="myScript.js"></script>

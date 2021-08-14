@@ -1,0 +1,325 @@
+/* All */
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: SS Nickson One;
+  src: url("./font/S&S\ Nickson\ One.otf");
+}
+@font-face {
+  font-family: HelveticaNeue;
+  src: url("./font/Nimbus-Sans-D-OT.ttf");
+}
+@font-face {
+  font-family: HelveticaNeueBold;
+  src: url("./font/Nimbus-Sans-D-OT-Bold.ttf");
+}
+@font-face {
+  font-family: Taviraj;
+  src: url("./font/Taviraj-Regular.ttf");
+}
+:root {
+  --main-bg-color: #002691;
+  --main-color-title: #00a1e1;
+  --main-color-input: #cacaca;
+  --main-color-border: rgba(22, 255, 255, 0.9);
+}
+
+/* body  */
+body {
+  background-image: url(./assets/backgroud.png);
+  background-color: var(--main-bg-color);
+}
+/* Header */
+header {
+  height: 81px;
+  border-bottom: 2px solid var(--main-color-border);
+  display: flex;
+  justify-content: center;
+}
+header .logoNorteño {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 203px;
+  z-index: 10;
+}
+@media (min-width: 1280px) {
+  header .logoNorteño {
+    display: initial;
+  }
+}
+header .container {
+  background: var(--main-bg-color);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 1200px;
+  height: inherit;
+  position: fixed;
+  width: 100%;
+}
+header .budLight {
+  border: none;
+  padding: 0.5rem;
+}
+@media (min-width: 768px) {
+  header .budLight {
+    border: 2px solid var(--main-color-input);
+    border-radius: 5px;
+  }
+}
+header nav {
+  display: none;
+}
+@media (min-width: 768px) {
+  header nav {
+    display: flex;
+  }
+}
+header nav ol {
+  display: flex;
+}
+header nav ol li {
+  margin: 0 1rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+header nav ol li a,
+header nav ol li select {
+  font-family: SS Nickson One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 57px;
+  color: #ffffff;
+  border: none;
+  text-decoration: none;
+  background: none;
+  padding: 0;
+  outline: none;
+}
+header nav ol li select {
+  border-bottom: 2px solid var(--main-color-border);
+}
+header .IconContainer {
+  display: none;
+}
+@media (min-width: 768px) {
+  header .IconContainer {
+    display: flex;
+  }
+}
+header .IconContainer a {
+  margin: 0 0.5rem;
+}
+header .topnav {
+  position: absolute;
+  right: 2rem;
+}
+@media (min-width: 768px) {
+  header .topnav {
+    display: none;
+  }
+}
+header .topnav button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+}
+header .topnav img {
+  width: 37px;
+  height: 37px;
+  border: none;
+  text-decoration: none;
+}
+header .topnav #myLinks {
+  position: absolute;
+  left: -5rem;
+  background: var(--main-bg-color);
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--main-color-border);
+}
+header .topnav #myLinks a {
+  font-family: SS Nickson One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 57px;
+  color: #ffffff;
+  border: none;
+  text-decoration: none;
+  background: none;
+  padding: 0;
+  outline: none;
+}
+
+header .topnav #myLinks a:hover {
+  border-bottom: 2px solid var(--main-color-border);
+}
+.none {
+  display: none;
+}
+/* section */
+section {
+  background: var(--main-bg-color);
+  mix-blend-mode: normal;
+  box-shadow: 0px 8.93507px 8.93507px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(22.3377px);
+  border-radius: 22.3377px;
+  padding: 1rem;
+  width: 80%;
+  max-width: 857px;
+  margin: 0 auto 1rem;
+}
+section h1 {
+  font-family: SS Nickson One;
+  font-size: 32px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--main-color-title);
+}
+section h2 {
+  font-family: HelveticaNeue;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 126.1%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin: 1rem 0px;
+}
+form {
+  padding: 1rem 0;
+}
+.Container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 1rem auto;
+  width: max-content;
+}
+@media (min-width: 768px) {
+  .Container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+form .Inputgroup {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+form .checkGruop {
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  margin: 2rem auto;
+}
+form .check {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin: 0.5rem 0;
+}
+form .check input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  margin-right: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: 2px solid var(--main-color-border);
+}
+form .check input[type="checkbox"]:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  content: "\f00c";
+  font-size: 10px;
+  color: var(--main-color-border);
+}
+form .check input[type="checkbox"]:checked:after {
+  display: none;
+}
+form .Inputgroup label,
+form .checkGruop label {
+  font-family: HelveticaNeue;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f7f5f4;
+}
+form .Inputgroup input,
+form .Inputgroup select {
+  background: transparent;
+  border: none;
+  padding: 0.5rem;
+  outline: normal;
+  font-family: Taviraj;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 27px;
+  color: var(--main-color-input);
+  border-bottom: 1px solid var(--main-color-input);
+  outline: none;
+}
+form .Inputgroup input::placeholder {
+  color: var(--main-color-input);
+}
+form .Inputgroup input:focus {
+  outline: none;
+  border-bottom: 1px solid var(--main-color-title);
+}
+form .dateOfBirth {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  width: 100%;
+}
+form .buttonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+form .buttonContainer button {
+  font-family: SS Nickson One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 28px;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: var(--main-color-input);
+  background: transparent;
+  border: 3px solid rgba(22, 255, 255, 0.9);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px #00a1e1;
+  border-radius: 28px;
+  width: 208px;
+  height: 52px;
+}
+/* footer */
+/* footer {
+  background: white;
+}
+ */
